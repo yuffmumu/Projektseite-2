@@ -27,7 +27,7 @@
 ### <a name="3.1"></a>Beschreibung des Programms:
 
 
-### <a name="3.2"></a>WIe funktionieren die Einzelteile des Programms:
+### <a name="3.2"></a>Wie funktionieren die Einzelteile des Programms:
 
 
 ### <a name="3.3"></a>Besondere Herausforderungen:
