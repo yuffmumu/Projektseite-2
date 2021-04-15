@@ -16,13 +16,14 @@
 
 
 ### <a name="1"></a>Einleitung:
-Unser zweites Projekt erstellten wir in Greenfoot, doch der Weg zu dieser Entschiedung war ein Längerer, als man eventuell erwarten würde.
-Uns war bewusst, was uns in der Welt des textbasierten Programmierens erwarten würde. Natürlich auf der einen Seite eine Menge Arbeit und schwierigkeiten aber vor allem auch theoretisch fast uneingeschränkte Möglichkeiten.
-So sahen wir uns um, in welcher Form sich diese Möglichkeiten in unserem Offensichtlich, des grundsätzlich kurzen Halbjahrs wegen, eingeschränktem Zeitramen verwirklichen lassen würden.
-Die "Unreal Engine" und "Greenfoot" kristallisierten sich als die 2 Kandidaten heraus, zwischen denen wir entscheiden mussten. Die Vorgebene Engine der "Unreal Engine" bestach dabei natürlich durch das Niveau das sich, sollte man sich tatsächlich so einen Projekt widmen, einstellen würde, doch wir mussten Anerkennen, das das Programmieren in der Unreal Engine unrealistisch war, und entschieden uns so für Greenfoot, was als Lernumgebung deutlich anfängerfreundlicher war.
+Final erarbeiteten wir in Greenfoot eine Art proof of concept von dem retro Spiel "Tetris".
+Wir wählten Tetris, da es sich um ein theoretisch grundlegend fassbares Spielprinziep handelt und sich das proof of concept trotz unseres extrem eingeschränkten Zeitramens daher zu einem moderaten Teil mit unseren Fähigkeiten fassen ließ.
 
-Final erarbeiteten wir dann in Greenfoot eine Art proof of concept von dem retro Spiel "Tetris".
-Tetris eignete sich in unserem Ramen gut, da es sich um ein theoretisch grundlegend fassbares Spielprinziep handelt und sich das proof of concept trotz unseres extrem eingeschränkten Zeitramens so zum Großteil realisieren ließ.
+Der Weg zu dieser Entschiedung jedoch, war ein Längerer, als man eventuell erwarten würde.
+Uns war bewusst, was uns in der Welt des textbasierten Programmierens erwarten würde. Natürlich auf der einen Seite eine Menge Arbeit und Schwierigkeiten, aber vor allem auch theoretisch fast uneingeschränkte Möglichkeiten.
+So sahen wir uns um, in welcher Form sich diese Möglichkeiten in unserem Offensichtlich, des grundsätzlich kurzen Halbjahrs wegen, eingeschränktem Zeitramen möglichst umfangreich verwirklichen lassen würden.
+Die "Unreal Engine" und "Greenfoot" kristallisierten sich als die 2 Kandidaten heraus, zwischen denen wir entscheiden mussten. Die Vorgebene Engine der "Unreal Engine" bestach dabei natürlich durch das Niveau das sich, sollte man sich tatsächlich so einen Projekt widmen, einstellen würde, doch wir mussten Anerkennen, das das Programmieren in der Unreal Engine unrealistisch war, und entschieden uns so für Greenfoot, was als Lernumgebung deutlich anfängerfreundlicher war.
+Dies Stellte sich insbesondere infolge des 2. Lockdowns durch die Coronapandemie, als eine sehr gute Entscheidung heraus.
 
 ### <a name="2"></a>Besonderheiten im 2. Projekt:
 Im 2. Projekt gab es 2 Dinge die unsere Progammierrfahrung mit Greenfoot extrem markant beeinflusst haben. 
