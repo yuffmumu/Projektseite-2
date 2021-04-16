@@ -81,10 +81,12 @@ Das große Problem was sich am Ende herauskristallisierte war, dass die Überpr�
 Es gibt 2 Möglichkeiten um die Reihen zu überprüfen. Die eine Möglichkeit ist über die "world" festzulegen, ob die unterste Reihe in dem Grid ausgefüllt ist.
 Vorraussetzung dafür ist, das die Welt klar unterteilt ist. Hat man solche Bereiche festgelegt kann man abfragen ob ein Bereich, wie die unterste Reihe, komplett mit Blöcken ausgefüllt ist und sofern dies der Fall ist diesen Bereich Löschen.
 Unsere herangehensweise hingegen bezog sich, wie in "Wie funktionieren die Einzelteile des Programms" erklärt, von anfang an nicht auf die Welt, sondern auf die Blöcke bzw. actor Klassen an sich.
-Aus diesem Grund ließ sich der über die "bottom detectors" ermittelte Bereich in der Welt nicht einfach löschen, da es an sich nur möglich ist die ganze "block"-Klasse zu löschen oder einen einzelnen Block. 
+Aus diesem Grund ließ sich der über die "bottom detectors" ermittelte Bereich in der Welt nicht einfach löschen, da es an sich nur möglich ist die ganze "block"-Klasse zu löschen oder einen einzelnen Block. Die Liste (wie sie auch im Block erklärt ist) wäre sicherlich mit mehr Zeit ein logischer Ansatz gewesen, jedoch lässt sich schwer sagen, ob es tatsächlich zur Lösung des Problems geführt hätte.
 Auch wenn die dahinter steckende Logik, das Spielfeld einzuteilen und das Programm auf diesem Weg erkennen zu lassen, welche Blöcke es löschen soll, die gleiche ist, wurde das Pferd sozusagen von der flaschen Seite aufgezogen, bzw. die Lösung des Problems wäre jedenfalls nicht so elegant möglich gewesen, wie wenn es über die "world" unterteilt worden, wäre.
+
 Ein unverwirklichter Lösungsansatz für unseren Ansatz wäre gewesen, ein seperaten Block bei jedem "respawn" zu erstellen, anstatt die "block"-klasse bei jedem respawn praktisch zu klonen, um zu gewährleisten, dass die Variablen der Objekte individuell sind, und man dadurch auf die einzelnen Blöcke zugreifen und somit einzeln Löschen könnte.
 Eine neue Klasse für jeden Respawn zu erstellen gelang uns jedoch im Zeitrahmen, trotz recherche und ggf. des unglücklichen Ansatzes wegen, bis zum Ende nicht.
+
 
 
 
