@@ -16,8 +16,8 @@
 
 
 ### <a name="1"></a>Einleitung:
-Final erarbeiteten wir in Greenfoot eine Art proof of concept von dem retro Spiel "Tetris".
-Wir wählten Tetris, da es sich um ein theoretisch grundlegend fassbares Spielprinziep handelt und sich das proof of concept trotz unseres extrem eingeschränkten Zeitramens daher zu einem moderaten Teil mit unseren Fähigkeiten fassen ließ.
+Final erarbeiteten wir in Greenfoot den Großteil einer Art "proof of concept" von dem retro Spiel "Tetris".
+Wir wählten Tetris, da es sich um ein theoretisch grundlegend fassbares Spielprinziep handelt und sich das proof of concept, trotz unseres extrem eingeschränkten Zeitramens, so 
 
 Der Weg zu dieser Entschiedung jedoch, war ein Längerer, als man eventuell erwarten würde.
 Uns war bewusst, was uns in der Welt des textbasierten Programmierens erwarten würde. Natürlich auf der einen Seite eine Menge Arbeit und Schwierigkeiten, aber vor allem auch theoretisch fast uneingeschränkte Möglichkeiten.
@@ -37,8 +37,8 @@ Dementsprechend gab es nur wenige Stellen, an denen wir gezwungen waren, uns von
 ### <a name="3.1"></a>Beschreibung des Programms:
 
 Die Grundidee hinter Tetris, die wir erreichen wollten, ist, dass Blöcke, die herunter fallen, eine Reihe auffüllen und diese daraufhin verschwindet.
-Im tatsächlichen Spiel gibt es dabei noch verschiedene Aspekte wie unterschiedliche Formen oder einen "score counter", der die erreichte Anzahl an aufgelösten Reihen anzeigt.
-Diese Features wurden aber im Ramen der Zeit schon von Anfang an ausgeschlossen.
+Im tatsächlichen Spiel von Alexei Paschitnow aus dem Jahre 1984 gibt es dabei noch verschiedene Aspekte, wie unterschiedliche Formen oder einen "score counter", der die erreichte Anzahl an aufgelösten Reihen anzeigt.
+Diese Features wurden aber im Ramen der Zeit schon von Anfang an ausgeschlossen, da sie auch für die Funktionsweise des tatsächlichen Spiels irrelevant sind.
  
 ### <a name="3.2"></a>Wie funktionieren die Einzelteile des Programms:
 Unser "World constructor" spannt als erstes die Welt an sich auf.
