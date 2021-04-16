@@ -52,11 +52,11 @@ Nun sind alle Objekte des Programms in der Welt platziert und können ihrer Funk
 ![image](https://user-images.githubusercontent.com/69623479/115020375-cddf4800-9eba-11eb-8ed4-0eb92adc07c5.png)
 
 
-Alle Methoden des Blockes werde hier im "public act" der Block-Klasse aufgerufen um sie modular aufzuteilen. Außerdem werden alle Variablen angelegt, die in den Methoden benötigt werden.
+Alle Methoden des Blockes werde hier in der "public act" Methode der Block-Klasse aufgerufen um sie modular aufzuteilen. Außerdem werden alle Variablen definiert, die in den Methoden benötigt werden.
 ----bild von public void und variablen
 
 Die erste Methode, die die Blöcke permanent ausführen müssen ist das nach unten Fallen.
-Dazu wird eine Variable ("counter") permanent hochgezählt und dann mit einer modulu-Funktion auf einen Rest überprüft. Ist dieser Rest = 0 wird der Block ein Stück nach unten gesetzt
+Dazu wird eine Variable ("counter") jeden tick um einen erhöht. Der Operator modulo (Division mit Rest als Ergebnis) setzt die Vaiable "counter" auf 0 soblad sie, in unserem Fall, 30 erreicht, da erst dann das Ergebnis nicht identisch mit dem ursprünglichen Wert ist. Die if-Schleife wir nun nur ausgelöst, wenn die Variable "counter" 0 ist, d.h bei jedem 30. tick.
 
 ![image](https://user-images.githubusercontent.com/69623479/115020511-fcf5b980-9eba-11eb-84a4-1cac7748f4ea.png)
 
