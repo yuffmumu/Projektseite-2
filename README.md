@@ -65,6 +65,13 @@ Prinzipiell ist es nur die Abfrage nach einem Tastendruck. Jedoch wurde dabei no
 
 ![image](https://user-images.githubusercontent.com/69623479/115021174-ec920e80-9ebb-11eb-8134-d447fb1153c7.png)
 
+Die nächste Mechanik, die zwingend notwendig war, war der Respawn.
+Prinzipiell ging es darum, einen neuen Block in der Welt zu generieren, wenn einer der "bottom detectors" berührt wird.
+Zusätzlich musste noch gewährleistet werden, dass nur ein Block gespawnt wird und nicht unendlich viele, sobald ein "bottom detector" belegt wird. Dies lösten wir wieder über eine zusätzliche Bedingung mit der Varaiblen "activated".
+
+![image](https://user-images.githubusercontent.com/69623479/115025146-4812cb00-9ec1-11eb-8fac-284f0e82e448.png)
+
+
 
 
 
