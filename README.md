@@ -42,10 +42,14 @@ Diese Features wurden aber im Ramen der Zeit schon von Anfang an ausgeschlossen,
  
 ### <a name="3.2"></a>Wie funktionieren die Einzelteile des Programms:
 Unser "World constructor" spannt als erstes die Welt an sich auf.
---- bild von super...
+
+![image](https://user-images.githubusercontent.com/69623479/115037665-fffaa500-9ece-11eb-9e1e-08a36ca42942.png)
+
 
 Danach platziert er alle Objekte in der Welt (sowohl den Ersten Block, als auch die "bottom_detectors")
----bild von objekten die platziert werden
+
+![image](https://user-images.githubusercontent.com/69623479/115037738-11dc4800-9ecf-11eb-8c15-a7beacd5dc50.png)
+
 
 Nun sind alle Objekte des Programms in der Welt platziert und können ihrer Funktionsweise nachkommen.
 
@@ -53,7 +57,8 @@ Nun sind alle Objekte des Programms in der Welt platziert und können ihrer Funk
 
 
 Alle Methoden des Blockes werde hier in der "public act" Methode der Block-Klasse aufgerufen um sie modular aufzuteilen. Außerdem werden alle Variablen definiert, die in den Methoden benötigt werden.
-----bild von public void und variablen
+
+![image](https://user-images.githubusercontent.com/69623479/115037802-26204500-9ecf-11eb-8104-aecd544b61e4.png)
 
 Die erste Methode, die die Blöcke permanent ausführen müssen ist das nach unten Fallen.
 Dazu wird eine Variable ("counter") jeden tick um einen erhöht. Der Operator modulo (Division mit Rest als Ergebnis) setzt die Vaiable "counter" auf 0 soblad sie, in unserem Fall, 30 erreicht, da erst dann das Ergebnis nicht identisch mit dem ursprünglichen Wert ist. Die if-Schleife wir nun nur ausgelöst, wenn die Variable "counter" 0 ist, d.h bei jedem 30. tick.
