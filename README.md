@@ -52,7 +52,7 @@ Nun sind alle Objekte des Programms in der Welt platziert und können ihrer Funk
 ![image](https://user-images.githubusercontent.com/69623479/115020375-cddf4800-9eba-11eb-8ed4-0eb92adc07c5.png)
 
 
-Alle Methoden des Blockes werde hier im "public void" der Block-Klasse aufgerufen um sie modular aufzuteilen. Außerdem werden alle Variablen angelegt, die in den Methoden benötigt werden.
+Alle Methoden des Blockes werde hier im "public act" der Block-Klasse aufgerufen um sie modular aufzuteilen. Außerdem werden alle Variablen angelegt, die in den Methoden benötigt werden.
 ----bild von public void und variablen
 
 Die erste Methode, die die Blöcke permanent ausführen müssen ist das nach unten Fallen.
