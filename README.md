@@ -93,7 +93,7 @@ Auch wenn die dahinter steckende Logik, das Spielfeld einzuteilen und das Progra
 
 Unsere Erfahrung mit Greenfoot war von externen Umständen stark geprägt. 
 Erst am schnell erreichten Ende der Arbeitszeit kamen wir langsam in einen Rythmus, in dem sich tatsächlich in Greenfoot arbeiten ließ.
-Das erkennen von Problemen in Greenfoot z.B. über "break points", sowie das aneignen von "keywords" wie z.B. "new" braucht Zeit.
+Das erkennen von Problemen in Greenfoot z.B. über "break points", sowie das Aneignen von "keywords" wie z.B. "new" braucht Zeit.
 Obwohl unsere Versuche über die reproduktion von mechaniken aus unserem ersten Projekt in "Snap!" an sich von Erfolg gekrönt war, insofern, als dass wir ein paar Grundbegriffe, wie "if commands" oder variablen wieder anwenden konnten, war es dennoch fast bis ganz zum Ende sehr schwer die Arbeit mit der Greenfoot API, dem Greenfoot Buch, Video reihen wie "the joy of code" und anderen Sourcecodes zu integrieren und sich an dieses, doch im Gegensatz zu "Snap!", sehr andere System zu gewöhnen.
 Zum Schluss lässt sich aber doch sagen, dass das im Ramen der Zeit tatsächliche Ziel, nämlich die Grundzüge von OOP im Sinne der Klassen und Objekte etc. zu verstehen, durchaus erreicht wurde und wir für uns einen klaren Fortschritt im textbasierten Programmieren verzeichnen können.
 Wir denken es ist durchaus anzunehmen, dass sich mit mehr Zeit das "proof of concept" von Tetris mit unseren erlangten Fähigkeiten hätte verwirklichen lassen können, da wir die Arbeitsweise und das Verständniss für die Informationsbeschaffung zum Arbeiten in Greenfoot uns im Endeffekt doch erfolgreich angeeignet haben und die Grundzüge von Greenfoot mit den geschafften Ergebnissen darstellen konnten.
