@@ -16,7 +16,7 @@
 
 
 ### <a name="1"></a>Einleitung:
-Final erarbeiteten wir in Greenfoot den Großteil einer Art "proof of concept" von dem retro Spiel "Tetris".
+Final erarbeiteten wir in Greenfoot den Großteil einer Art "proof of concept" des retro Spiels "Tetris".
 Wir wählten Tetris, da es sich um ein theoretisch grundlegend fassbares Spielprinziep handelt und sich das proof of concept, trotz unseres extrem eingeschränkten Zeitramens, so 
 
 Der Weg zu dieser Entschiedung jedoch, war ein Längerer, als man eventuell erwarten würde.
