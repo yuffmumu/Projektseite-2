@@ -17,7 +17,7 @@
 
 ### <a name="1"></a>Einleitung:
 Final erarbeiteten wir in Greenfoot den Großteil einer Art "proof of concept" des retro Spiels "Tetris".
-Wir wählten Tetris, da es sich um ein theoretisch grundlegend fassbares Spielprinziep handelt und sich das proof of concept, trotz unseres extrem eingeschränkten Zeitramens, so 
+Wir wählten Tetris, da es sich um ein theoretisch grundlegend fassbares Spielprinziep handelt und sich das proof of concept so, trotz unseres sehr eingeschränkten Zeitramens, möglichst weit umsetzen ließ.
 
 Der Weg zu dieser Entschiedung jedoch, war ein Längerer, als man eventuell erwarten würde.
 Uns war bewusst, was uns in der Welt des textbasierten Programmierens erwarten würde. Natürlich auf der einen Seite eine Menge Arbeit und Schwierigkeiten, aber vor allem auch theoretisch fast uneingeschränkte Möglichkeiten.
@@ -71,24 +71,32 @@ Zusätzlich musste noch gewährleistet werden, dass nur ein Block gespawnt wird 
 
 ![image](https://user-images.githubusercontent.com/69623479/115025146-4812cb00-9ec1-11eb-8fac-284f0e82e448.png)
 
+Zur erkennung des Bodens wurde die Klasse "bottom_detector" mit ihren 5 unterklassen eingefügt. Diese wurden genutzt um Variablen, die der Block benötigt entsprechend zu setzen.
+Einmal das berühren eines der 5 "bottom_detector" subclasses:
 
+![image](https://user-images.githubusercontent.com/69623479/115033802-228abf00-9ecb-11eb-9d2e-504a87a190c8.png)
 
+und einmal in der Überklasse "bottom_detector" der Fall, dass alle Berührt werden um theoretisch den Command "delete_row" im Block zu initiieren (welcher jedoch nicht fertig ist und somit an dieser Stelle nicht weiter auftaucht):
 
+![image](https://user-images.githubusercontent.com/69623479/115034035-5b2a9880-9ecb-11eb-9aff-a299fadb2a2e.png)
 
 
 ### <a name="3.3"></a>Besondere Herausforderungen:
 Das große Problem was sich am Ende herauskristallisierte war, dass die Überprüfung der Reihen bzw. der Blöcke über die "actors" stattfand.
 Es gibt 2 Möglichkeiten um die Reihen zu überprüfen. Die eine Möglichkeit ist über die "world" festzulegen, ob die unterste Reihe in dem Grid ausgefüllt ist.
-Vorraussetzung dafür ist, das die Welt klar unterteilt ist. Hat man solche Bereiche festgelegt kann man abfragen ob ein Bereich, wie die unterste Reihe, komplett mit Blöcken ausgefüllt ist und sofern dies der Fall ist diesen Bereich Löschen.
-Unsere herangehensweise hingegen bezog sich, wie in "Wie funktionieren die Einzelteile des Programms" erklärt, von anfang an nicht auf die Welt, sondern auf die Blöcke bzw. actor Klassen an sich.
-Aus diesem Grund ließ sich der über die "bottom detectors" ermittelte Bereich in der Welt nicht einfach löschen, da es an sich nur möglich ist die ganze "block"-Klasse zu löschen oder einen einzelnen Block. Die Liste (wie sie auch im Block erklärt ist) wäre sicherlich mit mehr Zeit ein logischer Ansatz gewesen, jedoch lässt sich schwer sagen, ob es tatsächlich zur Lösung des Problems geführt hätte.
-Auch wenn die dahinter steckende Logik, das Spielfeld einzuteilen und das Programm auf diesem Weg erkennen zu lassen, welche Blöcke es löschen soll, die gleiche ist, wurde das Pferd sozusagen von der flaschen Seite aufgezogen, bzw. die Lösung des Problems wäre jedenfalls nicht so elegant möglich gewesen, wie wenn es über die "world" unterteilt worden, wäre.
-
-Ein unverwirklichter Lösungsansatz für unseren Ansatz wäre gewesen, ein seperaten Block bei jedem "respawn" zu erstellen, anstatt die "block"-klasse bei jedem respawn praktisch zu klonen, um zu gewährleisten, dass die Variablen der Objekte individuell sind, und man dadurch auf die einzelnen Blöcke zugreifen und somit einzeln Löschen könnte.
-Eine neue Klasse für jeden Respawn zu erstellen gelang uns jedoch im Zeitrahmen, trotz recherche und ggf. des unglücklichen Ansatzes wegen, bis zum Ende nicht.
-
-
-
+Vorraussetzung dafür ist, das die Welt klar unterteilt ist. Hat man solche Bereiche (arrays) festgelegt kann man abfragen ob ein Bereich, wie die unterste Reihe, komplett mit Blöcken ausgefüllt ist und sofern dies der Fall ist, diesen Bereich Löschen.
+Unsere herangehensweise hingegen bezog sich jedoch von anfang an nicht auf die Welt, sondern auf die Blöcke bzw. actor Klassen an sich.
+Aus diesem Grund ließ sich der über die "bottom detectors" ermittelte Bereich in der Welt nicht einfach löschen, da es an sich nur möglich ist die ganze "block"-Klasse zu löschen oder einen einzelnen Block. Eine Liste wo die 5 Blöcke, die die Reihe füllen, eingetragen sind (wie sie auch im Block erklärt ist) wäre sicherlich mit mehr Zeit ein logischer Ansatz gewesen, jedoch lässt sich schwer sagen, ob es tatsächlich zur Lösung des Problems geführt hätte.
+Auch wenn die dahinter steckende Logik, das Spielfeld einzuteilen und das Programm auf diesem Weg erkennen zu lassen, welche Blöcke es löschen soll, die gleiche ist, wurde das Pferd sozusagen von der falschen Seite aufgezogen, bzw. die Lösung des Problems wäre jedenfalls nicht so elegant möglich gewesen, wie wenn es über die "world" unterteilt worden wäre.
 
 ### <a name="4"></a>Schlusswort:
+
+Unsere Erfahrung mit Greenfoot war von externen Umständen stark geprägt. 
+Erst am schnell erreichten Ende der Arbeitszeit kamen wir langsam in einen Rythmus, in dem sich tatsächlich in Greenfoot arbeiten ließ.
+Das erkennen von Problemen in Greenfoot z.B. über "break points", sowie das aneignen von "keywords" wie z.B. "new" braucht Zeit.
+Obwohl unsere Versuche über die reproduktion von mechaniken aus unserem ersten Projekt in "Snap!" an sich von Erfolg gekrönt war, insofern, als dass wir ein paar Grundbegriffe, wie "if commands" oder variablen wieder anwenden konnten, war es dennoch fast bis ganz zum Ende sehr schwer die Arbeit mit der Greenfoot API, dem Greenfoot Buch, Video reihen wie "the joy of code" und anderen Sourcecodes zu integrieren und sich an dieses, doch im Gegensatz zu "Snap!", sehr andere System zu gewöhnen.
+Zum Schluss lässt sich aber doch sagen, dass das im Ramen der Zeit tatsächliche Ziel, nämlich die Grundzüge von OOP im Sinne der Klassen und Objekte etc. zu verstehen, durchaus erreicht wurde und wir für uns einen klaren Fortschritt im textbasierten Programmieren verzeichnen können.
+Wir denken es ist durchaus anzunehmen, dass sich mit mehr Zeit das "proof of concept" von Tetris mit unseren erlangten Fähigkeiten hätte verwirklichen lassen können, da wir die Arbeitsweise und das Verständniss für die Informationsbeschaffung zum Arbeiten in Greenfoot uns im Endeffekt doch erfolgreich angeeignet haben und die Grundzüge von Greenfoot mit den geschafften Ergebnissen darstellen konnten.
+
+
 
