@@ -41,6 +41,32 @@ Im tatsächlichen Spiel gibt es dabei noch verschiedene Aspekte wie unterschiedl
 Diese Features wurden aber im Ramen der Zeit schon von Anfang an ausgeschlossen.
  
 ### <a name="3.2"></a>Wie funktionieren die Einzelteile des Programms:
+Unser "World constructor" spannt als erstes die Welt an sich auf.
+--- bild von super...
+
+Danach platziert er alle Objekte in der Welt (sowohl den Ersten Block, als auch die "bottom_detectors")
+---bild von objekten die platziert werden
+
+Nun sind alle Objekte des Programms in der Welt platziert und können ihrer Funktionsweise nachkommen.
+
+![image](https://user-images.githubusercontent.com/69623479/115020375-cddf4800-9eba-11eb-8ed4-0eb92adc07c5.png)
+
+
+Alle Methoden des Blockes werde hier im "public void" der Block-Klasse aufgerufen um sie modular aufzuteilen. Außerdem werden alle Variablen angelegt, die in den Methoden benötigt werden.
+----bild von public void und variablen
+
+Die erste Methode, die die Blöcke permanent ausführen müssen ist das nach unten Fallen.
+Dazu wird eine Variable ("counter") permanent hochgezählt und dann mit einer modulu-Funktion auf einen Rest überprüft. Ist dieser Rest = 0 wird der Block ein Stück nach unten gesetzt
+
+![image](https://user-images.githubusercontent.com/69623479/115020511-fcf5b980-9eba-11eb-84a4-1cac7748f4ea.png)
+
+Die zweite Methode zur Bewegung der Blöcke ist die Steuerung nach Links und Rechts.
+Prinzipiell ist es nur die Abfrage nach einem Tastendruck. Jedoch wurde dabei noch eine zusätzliche Bedingung über eine Variable gesetzt, um zu gewährleisten, dass sich die Blöcke, wenn sie unten angekommen sind, nicht mehr bewegen können.
+
+![image](https://user-images.githubusercontent.com/69623479/115021174-ec920e80-9ebb-11eb-8134-d447fb1153c7.png)
+
+
+
 
 
 ### <a name="3.3"></a>Besondere Herausforderungen:
@@ -53,7 +79,7 @@ Auch wenn die dahinter steckende Logik, das Spielfeld einzuteilen und das Progra
 Ein unverwirklichter Lösungsansatz für unseren Ansatz wäre gewesen, ein seperaten Block bei jedem "respawn" zu erstellen, anstatt die "block"-klasse bei jedem respawn praktisch zu klonen, um zu gewährleisten, dass die Variablen der Objekte individuell sind, und man dadurch auf die einzelnen Blöcke zugreifen und somit einzeln Löschen könnte.
 Eine neue Klasse für jeden Respawn zu erstellen gelang uns jedoch im Zeitrahmen, trotz recherche und ggf. des unglücklichen Ansatzes wegen, bis zum Ende nicht.
 
- 
+
 
 ### <a name="4"></a>Schlusswort:
 
